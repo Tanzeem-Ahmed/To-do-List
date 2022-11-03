@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap');
+
+body {
+    margin: 0 50px;
+    padding: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+.app {
+    background-color: aliceblue;
+    width: 300px;
+    height: 500px;
+    overflow-y: scroll;
+    padding: 15px;
+    border: 3px solid #d7edff;
+    border-radius: 15px;
+}
+
+.app::-webkit-scrollbar { 
+    display: none;
+}
+
+#addNew {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d7edff;
+    opacity: 0.6;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#addNew i {
+    font-size: 20px;
+}
+
+#add {
+    background-color: #d7edff;
+    color: #000;
+    outline: none;
+    border: none;
+}
+
+#cancel {
+    background-color: #ddd;
+    color: #000;
+    outline: none;
+    border: none;
+}
+
+#msg {
+    color: red;
+    font-size: 12px;
+    padding-left: 3px;
+}
+
+#tasks {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+
+#tasks div {
+    border: 1px solid #d7edff;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 4px;
+    display: grid;
+    gap: 4px;
+}
+
+#tasks div .options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#tasks div .options i {
+    cursor: pointer;
+}
+
